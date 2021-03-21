@@ -16,28 +16,13 @@ func ConnectAndListRepos(user string, pass string, owner string) {
 	}
 
 	repos, err := c.Repositories.ListForAccount(opt)
-	fmt.Println("List number of repos:", repos.Size)
 	if err != nil {
-		fmt.Println("Error listing repos", err)
+		fmt.Println("Error listing repos:", err)
 		return
 	}
+	fmt.Println("List number of repos:", repos.Size)
 
 	for _, repo := range repos.Items {
 		fmt.Println("List repo with name:", repo.Name)
-		// tagOpt := &bitbucket.RepositoryTagOptions{
-		// 	Owner:    owner,
-		// 	RepoSlug: repo.Slug,
-		// }
-		// res, err := c.Repositories.Repository.ListTags(tagOpt)
-
-		// if err != nil {
-		// 	fmt.Println("Error", err)
-		// }
-
-		// if len(res.Tags) != 0 {
-		// 	for _, tag := range res.Tags {
-		// 		fmt.Println(tag.Name)
-		// 	}
-		// }
 	}
 }

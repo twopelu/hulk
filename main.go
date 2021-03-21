@@ -14,7 +14,7 @@ func main() {
 
 	args := os.Args[1:] // args[0] is the program path
 	if (args == nil || len(args) != 3) {
-		fmt.Println("Usage is: hulk <user> <pass> <owner>")
+		fmt.Println("Hulk usage is: hulk <user> <pass> <owner>")
 		return
 	}
 
