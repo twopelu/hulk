@@ -1,10 +1,12 @@
 # Hulk CLI
 
-Hulk is a tool written in Go to make bulk changes in Git repos.
+Hulk is a tool written in Go to make bulk changes in BitBucket repos.
 
 ## Dependencies
 
-Bitbucket API: https://pkg.go.dev/github.com/ktrysmt/go-bitbucket
+BitBucket API lib: https://pkg.go.dev/github.com/ktrysmt/go-bitbucket
+
+BitBucket API docs: https://developer.atlassian.com/bitbucket/api/2/reference
 
 ## Installation
 
